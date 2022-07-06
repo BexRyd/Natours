@@ -151,6 +151,11 @@ margin-bottom: 6rem;
 &:hover{
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+    &::after{
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
 }
 &:active{
     transform: translateY(-1px);
@@ -159,6 +164,10 @@ margin-bottom: 6rem;
 &--white{
     background-color: #fff;
     color: $color-grey-dark;
+
+    &::after{
+        background-color: #fff;
+    }
 }
 
 &::after{
@@ -175,13 +184,8 @@ margin-bottom: 6rem;
 
 }
 
-&--white::after{
-    background-color: #fff;
-}
-&:hover::after{
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
+
+
 &--animated{
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode:backwards ;
