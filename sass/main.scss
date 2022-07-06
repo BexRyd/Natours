@@ -2,6 +2,7 @@
 $color-primary-light:#7ed56f;
 $color-primary: #55c57a;
 $color-primary-dark: #28b485;
+$color-black:#000;
 
 $color-grey-dark:#777;
 
@@ -34,25 +35,37 @@ body{
     clip-path: polygon(0 0 ,100% 0, 100% 75vh,0 100% );
     position: relative;
 
-}
-.header__logo-box{
-position: absolute;
-top:4rem;
-left:4rem;
-}
-.header__logo{
-height: 3.5rem;
+    &__logo-box{
+        position: absolute;
+        top:4rem;
+        left:4rem
+    }
+
+    &__logo{
+        height: 3.5rem;
+        
+        }
+    
+    &__text-box{
+            position: absolute;
+            top:40%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
 
 }
+
+
+
+
 
 .heading-primary{
 color:#fff;
 text-transform: uppercase;
 backface-visibility: hidden;
 margin-bottom: 6rem;
-}
-
-.heading-primary--main{
+&--main{
     display: block;
     font-size: 6rem;
     font-weight: 400;
@@ -67,7 +80,7 @@ margin-bottom: 6rem;
 
 }
 
-.heading-primary--sub{
+&--sub{
     display: block;
     font-size: 2rem;
     font-weight:700 ;
@@ -75,6 +88,9 @@ margin-bottom: 6rem;
     animation: moveInRight 1s ease-out;
 
 }
+}
+
+
 
 @keyframes moveInLeft {
     0%{
@@ -119,16 +135,9 @@ margin-bottom: 6rem;
 
 }
 
-.header__text-box{
-    position: absolute;
-    top:40%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-}
-
-.btn:link,
-.btn:visited{
+.btn{
+    &:link,
+&:visited{
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 4rem;
@@ -137,24 +146,22 @@ margin-bottom: 6rem;
     transition: all .2s;
     position: relative;
     font-size: 1.6rem;
-  
-
 }
 
-.btn:hover{
+&:hover{
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    box-shadow: 0 1rem 2rem rgba($color-black,.2);
 }
-.btn:active{
+&:active{
     transform: translateY(-1px);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
 }
-.btn--white{
+&--white{
     background-color: #fff;
     color: $color-grey-dark;
 }
 
-.btn::after{
+&::after{
     content: "";
     display: inline-block;
     height: 100%;
@@ -167,15 +174,24 @@ margin-bottom: 6rem;
     transition: all .4s;
 
 }
-.btn--white::after{
+
+&--white::after{
     background-color: #fff;
 }
-.btn:hover::after{
+&:hover::after{
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
-.btn--animated{
+&--animated{
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode:backwards ;
     
 }
+
+}
+
+
+
+
+
+
