@@ -2,7 +2,7 @@
 background-color:$color-grey-light-1;
 padding: 55rem 0;
 
-margin-top: -55vh;
+margin-top: -60vh;
 ;
 }
 
@@ -14,10 +14,17 @@ rgba($color-primary-dark,0.8)), url(../img/nat-4.jpg);
 background-size: cover;
 transform: skewY(-7deg);
 display:flex ;
-margin-top: -10rem;
+margin-top: -15rem;
 
 & > *{
 transform: skewY(7deg);
 
 }
+}
+
+.section-tours{
+    background-color: $color-grey-light-1;
+    padding: 25rem 0 50rem 0rem;
+    margin-top: -15rem;
+
 }
