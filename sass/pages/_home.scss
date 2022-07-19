@@ -13,8 +13,13 @@ rgba($color-primary-light,0.8),
 rgba($color-primary-dark,0.8)), url(../img/nat-4.jpg);
 background-size: cover;
 transform: skewY(-7deg);
-display:flex ;
 margin-top: -15rem;
+display: flex;
+
+@include respond(tab-port) {
+    display: block;
+    padding: 85rem 0;
+    }
 
 & > *{
 transform: skewY(7deg);

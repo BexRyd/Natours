@@ -234,8 +234,12 @@ body {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg);
-  display: flex;
-  margin-top: -15rem; }
+  margin-top: -15rem;
+  display: flex; }
+  @media (max-width: 56.25em) {
+    .section-features {
+      display: block;
+      padding: 85rem 0; } }
   .section-features > * {
     transform: skewY(7deg); }
 
@@ -267,6 +271,12 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem; } }
   .row::after {
     content: "";
     display: table; }
@@ -274,6 +284,13 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -470,6 +487,10 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
   transition: transform .3s; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      margin-top: -37rem;
+      margin-bottom: 37rem; } }
   .feature-box__icon {
     padding-bottom: 2rem;
     font-size: 6rem;
