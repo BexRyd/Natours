@@ -8,6 +8,14 @@
         box-shadow: 0 1.5rem 4rem rgba($color-black, .35);
         transition: transform .3s;
        
+        @include respond(tab-port) {
+           
+          
+            /* &:not(:last-child){
+            margin-bottom: 54rem;
+            } */
+            
+            }
     
         
     &__icon{
