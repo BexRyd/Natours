@@ -23,7 +23,7 @@ display: flex;
 
 @include respond(tab-port) {
     display: block;
-    padding: 85rem 0;
+    padding: 65rem 0;
     }
 
 & > *{

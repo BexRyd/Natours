@@ -250,7 +250,7 @@ body {
   @media (max-width: 56.25em) {
     .section-features {
       display: block;
-      padding: 85rem 0; } }
+      padding: 65rem 0; } }
   .section-features > * {
     transform: skewY(7deg); }
 
@@ -560,8 +560,8 @@ body {
   transition: transform .3s; }
   @media (max-width: 56.25em) {
     .feature-box {
-      margin-top: -37rem;
-      margin-bottom: 37rem; } }
+      margin-top: -54rem;
+      margin-bottom: 54rem; } }
   .feature-box__icon {
     padding-bottom: 2rem;
     font-size: 6rem;
