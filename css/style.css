@@ -249,8 +249,7 @@ body {
   display: flex; }
   @media (max-width: 56.25em) {
     .section-features {
-      display: block;
-      padding: 65rem 0; } }
+      padding: 15rem 0; } }
   .section-features > * {
     transform: skewY(7deg); }
 
@@ -560,8 +559,9 @@ body {
   transition: transform .3s; }
   @media (max-width: 56.25em) {
     .feature-box {
-      margin-top: -54rem;
-      margin-bottom: 54rem; } }
+      /* &:not(:last-child){
+            margin-bottom: 54rem;
+            } */ } }
   .feature-box__icon {
     padding-bottom: 2rem;
     font-size: 6rem;

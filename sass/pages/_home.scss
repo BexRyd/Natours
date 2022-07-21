@@ -22,8 +22,8 @@ margin-top: -15rem;
 display: flex;
 
 @include respond(tab-port) {
-    display: block;
-    padding: 65rem 0;
+   
+    padding: 15rem 0;
     }
 
 & > *{
