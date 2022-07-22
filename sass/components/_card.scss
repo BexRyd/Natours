@@ -156,7 +156,7 @@
         font-weight: 100;
     }
 
-        @include respond(tab-port) {
+        //@include respond(tab-potr) {
         @media only screen and (max-width: 56.25em),
         only screen and (hover: none) {
     
@@ -202,6 +202,8 @@
             &__price-value {
                 font-size: 4rem;
             }
+        
         }
-    }
+
+    
 }
